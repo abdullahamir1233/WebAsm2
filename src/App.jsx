@@ -9,10 +9,14 @@ import FeaturedSection from './components/FeaturedSection';
 import AboutSection from './components/AboutSection'; 
 import ChefsSection from './components/ChefsSection'; 
 import GallerySection from './components/GallerySection'; 
-import BookATableSection from './components/BookATableSection'; // Import the BookATableSection
-import EventsSection from './components/EventsSection'; // Import the EventsSection
 import BlogSection from './components/BlogSection';
 import ContactSection from './components/ContactSection';
+import BannerSection from './components/BannerSection';
+import ReviewSection from './components/ReviewSection';
+import FooterSection from './components/FooterSection';
+import SampleButtonsSection from './components/SampleButtonsSection'; 
+import TableSection from './components/TableSection'; 
+import HeaderSection from './components/HeaderSection'; // Import HeaderSection
 
 const App = () => {
     return (
@@ -24,6 +28,9 @@ const App = () => {
 
             {/* Main Content */}
             <div className="flex-1 ml-64">
+                {/* Header Section */}
+                <HeaderSection /> {/* Add the HeaderSection here */}
+
                 {/* Navbar */}
                 <Navbar />
 
@@ -36,17 +43,39 @@ const App = () => {
                         <RecentMovement />
                     </div>
 
-                    {/* Sections */}
+                    {/* Banner Section */}
+                    <BannerSection />
+
+                    {/* Menu Section */}
                     <MenuSection />
+
+                    {/* Featured Section */}
                     <FeaturedSection />
+
+                    {/* About Section */}
                     <AboutSection />
+
+                    {/* Chefs Section */}
                     <ChefsSection />
+
+                    {/* Gallery Section */}
                     <GallerySection />
-                    <BookATableSection />
-                    <EventsSection /> {/* Add the EventsSection here */}
+
+                    {/* Review Section */}
+                    <ReviewSection />
+
+                    {/* Table Section */}
+                    <TableSection />
+
+                    {/* Blog Section */}
                     <BlogSection />
+
+                    {/* Contact Section */}
                     <ContactSection />
                 </div>
+
+                {/* Footer Section */}
+                <FooterSection />
             </div>
         </div>
     );
